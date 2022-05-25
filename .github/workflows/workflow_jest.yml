@@ -1,12 +1,9 @@
 
-name: test coverage check
-
 on:
-  push:
-    branches:
-      - '**'        # matches every branch
-      - '!master'   # excludes master
-
+  pull_request:
+    paths:
+      - "**"
+      - ".github/workflows/workflow_jest.yml"
 jobs:
 
   coverage:
