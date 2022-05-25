@@ -23,4 +23,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           min_threshold: '100'
-          report_file_path: './coverage/lcov.info'
+          report_file_path: 'coverage/lcov.info'
