@@ -18,5 +18,5 @@ jobs:
         uses: sergavshin/gha-test-coverage-check@v1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          min_threshold: '100'
+          min_threshold: '80'
           report_file_path: 'coverage/lcov.info'
