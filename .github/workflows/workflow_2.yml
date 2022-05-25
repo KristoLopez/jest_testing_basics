@@ -1,0 +1,21 @@
+
+on:
+  pull_request:
+    paths:
+      - "**"
+      - ".github/workflows/workflow_2.yml"
+jobs:
+
+  coverage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - run: npm install
+      - run: npm test 
+
+      - name: check
+        uses: themichaelhall/check-code-coverage@v1
+        with:
+          required-percentage: 100
+          report: 'coverage/clover.xml'
