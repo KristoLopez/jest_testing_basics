@@ -17,6 +17,5 @@ jobs:
       - name: check
         uses: themichaelhall/check-code-coverage@v1
         with:
-          required-percentage: 80
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          required-percentage: 100
           report: 'coverage/clover.xml'
