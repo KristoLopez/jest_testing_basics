@@ -7,7 +7,7 @@ coverage:
     - run: npm run coverage
 
     - name: check
-      uses: inzephirum/gha-test-coverage-check
+      uses: sergavshin/gha-test-coverage-check@v1
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         min_threshold: '100'
