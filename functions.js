@@ -1,6 +1,7 @@
 const axios = require('axios');
 
 const functions = {
+  axel: "jlks",
   add: (num1, num2) => num1 + num2,
   isNull: () => null,
   checkValue: x => x,
@@ -15,6 +16,8 @@ const functions = {
       .then(res => res.data)
       .catch(err => 'error')
 };
+
+
 
 module.exports = functions;
 
